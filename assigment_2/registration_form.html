@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <img src="saylani.jpeg" width="100%" height="250">
+    <div id="main">
+        <h1>Registration form</h1>
+        <form action="wellcome.html" >
+            First Name :<input type="text" name="f_name" class="data f_name" required="required"><span>(max 30 character a-z & A-Z) </span><br>
+            Last Name  : <input type="text" name="f_name" class="data l_name"  required="required"><span>(max 30 character a-z & A-Z) </span> <br>
+            Date       : <input type="date" name="f_name" class="data"><br>
+            Email ID :<input type="email" name="f_name" class="data"  required="required"><br>
+            Phone Number :<input type="number" name="f_name" class="data p_no" maxlength="10"  required="required"><span>(10 digit number)</span><br>
+            Gender : <input type="radio" name="gender" checked="checked" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female <br>
+            Address :<br><textarea cols="50" rows="4"  required="required"></textarea><br>
+            City : <input type="text"  maxlength="30" class="data city"  required="required"><span>(max 30 character a-z & A-Z) </span><br>
+            Pin Code :<input type="number" maxlength="6" class="data pin_code"  required="required"><span>(6 digit number)</span><br>
+            State : <input type="text" maxlength="30" class="data state"  required="required"><span>(max 30 character a-z & A-Z) </span><br>
+            Country :<input type="text"class="data country"  required="required"><br>
+            Hobbies :<input type="checkbox" name="hob" value="drawing">Drawing
+            <input type="checkbox" name="hob" value="singing">Singing
+            <input type="checkbox" name="hob" value="dancing">Dancing
+            <input type="checkbox" name="hob" value="sketching">Sketching
+            <input type="checkbox" name="hob" value="other">Other
+            <input type="text" class="data"><br>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <td>S.no </td>
+                    <td>Examination</td>
+                    <td class="head">Bord</td>
+                    <td class="head">Percentage</td>
+                    <td class="head">Year of passing</td>
+                </tr>
+               <tr> 
+                    <th></th>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                </tr>
+                <tr>  
+                    <th></th>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><input type="text" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                    <td><input type="number" class="data"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>4</td>
+                    <td>Master</td>
+                    <td><input type="text" class="data"></td>
+                    <td><input type="number" class="data"></td>
+
+                    <td><input type="number" class="data"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td></td>
+                    <td></td>
+                    <td><span>(max. length 30)</span></td>
+                    <td><span>(upto two decimal)</span></td>
+                    <td></td>
+                </tr>
+            </table><br>
+            Course Applied For : <input type="radio" name="Course">BCA
+            <input type="radio" name="Course">B.com
+            <input type="radio" name="Course">B.Sc
+            <input type="radio" name="Course">B.A<br>
+            <button class="btn btn1">submit</button>
+            <button type="reset" class="btn btn2">reset</button>
+
+        </form>
+
+    </div>
+   
+    
+</body>
+</html>
