@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="../images/brandlogo.png" type="image/icon">
+
+         <!-- bootsrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar a i{
+        text-decoration:none;
+        font-size:20px;
+        margin-right:20px;
+        color:gray;
+    }
+    .navbar a:hover i{
+        background:none;
+        color:blue;
+    }
+
+     /* product card */
+    .cart_product h1{
+      font-family:monospace;
+      font-weight: bold;
+      border-bottom:5px solid rgb(84, 209, 240);
+      padding: 5px;
+      margin-top: -20px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    }       
+    .product_box{
+      text-align: center;
+      margin: 10px;
+    }
+    .product_box .card {
+      display: inline-block;
+      margin-top:5px ;
+      height: 275px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .product_box .card .card-body p{
+      font-size: 13px;
+    }
+    .product_box .card .card-body .btn{
+      margin-top: -15px;
+      width: 100%;
+      letter-spacing: 2px;
+    }
+    
+    @media (max-width:360px){
+
+    .navbar a i {
+        display: none;
+    }    
+    .navbar span{
+        margin-left: 130px;
+        letter-spacing: 2px;
+    }
+
+        /* bottom navbar */
+    .nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+        z-index: 20;   
+    }
+    .nav .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:15px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+        margin-top: 5px;
+    }
+    .nav_link:hover{
+        background-color: #eeeeee;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav_link:active{
+        color: #009578;
+    }
+    .nav_icon{
+        font-size: 24px;
+    } 
+
+    }  
+    @media (max-width:768px){
+    .navbar a i {
+        display: none;
+    }
+    .navbar span{
+        margin-left: 100px;
+        letter-spacing: 2px;
+    }
+
+    .cart_product h1{
+      margin-top: 0px;
+    }
+    
+    /* bottom navbar */
+    .nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+        z-index: 20;    
+    }
+    .nav .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:15px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+        margin-top: 5px;
+    }
+    .nav_link:hover{
+        background-color: #eeeeee;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav_link:active{
+        color: #009578;
+    }
+    .nav_icon{
+        font-size: 24px;
+    } 
+
+}   
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar fixed-top bg-light">
+            <a href="../home.html"><i class="fa fa-arrow-left mr-4" arial-hidden="true"></i></a>
+          <span class="mr-auto text-info font-weight-bold " style="font-size:25px;">Cart</span>
+          </ul>
+        </nav>
+
+
+
+
+    </div>
+
+    
+          <!-- bottom navbar -->
+
+          <div class="bottom_nav">
+            <nav class="nav">
+              <a href="../home.html" class="nav_link">
+                <i class="fa fa-home nav_icon" aria-hidden="true"></i>
+                <span class="nav_text">home</span>
+              </a>
+              <a href="./category.html" class="nav_link">
+                <i class="fa fa-th-list nav_icon" aria-hidden="true"></i>
+                <span class="nav_text">category</span>
+              </a>
+              <a href="./cart.html" class="nav_link">
+                <i class="fa fa-shopping-cart nav_icon" aria-hidden="true"></i>
+                <span class="nav_text">cart</span>
+              </a>
+              <a href="./account.html" class="nav_link">
+                <i class="fa fa-user nav_icon" aria-hidden="true"></i>
+                <span class="nav_text">account</span>
+              </a>
+            </nav>
+          </div>
+        
+        
+        <div class="cart_product mt-5">
+
+        <h1>More To Love</h1>
+
+        <div class="product_box ">
+        <div class="card" style="width: 10rem;">
+          <img src="../images/deal_2.jpeg" class="card-img-top" height="150" alt="...">
+          <div class="card-body">
+                <p class="card-text pt-0">
+                    about product
+                    <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                </p>
+            <a href="#" class="btn btn-info">Buy</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 10rem;">
+            <img src="../images/deal_1.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_2.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_3.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_4.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_5.png" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_6.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_7.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_8.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_9.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_10.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>  
+
+        
+          <div class="card" style="width: 10rem;">
+            <img src="../images/deal_12.jpeg" class="card-img-top" height="150" alt="...">
+            <div class="card-body">
+                  <p class="card-text pt-0">
+                      about product
+                      <b class="text-danger">PKR:1500</b><br><del>RKR:2000</del>
+                  </p>
+              <a href="#" class="btn btn-info">Buy</a>
+            </div>
+          </div>  
+
+        </div>
+        <br>
+        <br>
+        </div>
+
+
+</body>
+</html>

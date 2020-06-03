@@ -1,0 +1,323 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+
+    /* Navigation bar */
+.brand_name{
+    color:white;
+    font-size:40px;
+    margin-left: 5px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 90px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 6px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+}
+.navbar ul li a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.navbar a.active,.navbar a:hover{
+    background: #ff5064;
+    transition: 0.5s;
+}
+
+  /* product card */
+.product{
+    text-align: center;
+    margin: 10px;
+}
+.product .card {
+    display: inline-block;
+    margin-top:20px ;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.product .card .card-body .btn{
+    width: 100%;
+    letter-spacing: 2px;
+ }
+
+   /* information */
+
+.info{
+    background:black;
+    opacity: 0.8;
+    width: 100%;
+    height: 300px;
+
+}  
+.contact_logo{
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+} 
+.info .footer{
+    width: 100%;
+    height: 30px;
+    color: white;
+    background:blue;
+    margin-top:10px;
+}
+
+
+@media (max-width:360px){
+
+      /* Navigation Bar */
+    .navbar ul li{
+       display:none;
+    }
+    .navbar button{
+        margin-right:0px;
+    }
+    .navbar button img{
+        width:30px;
+        height:30px;
+    }
+    .navbar .brand_name{
+        font-size:20px;
+    }
+
+
+     /* image slider */
+     .imgslider{
+       width: 100%;
+       /* height: 200px; */
+    }
+
+        /* product group */
+
+    .product_group h1{
+        font-size:25px;
+    }    
+    .product_group .card-body .card{
+        max-width:20%;
+        max-height:80px;
+    }
+    .product_group .card-body .card img{
+        height: 70px;
+    }
+    .product_group .card .card-header i{
+        font-size:13px;
+    }
+
+       /* product card */
+    .product{
+        margin:0px;
+    }
+    .product h1{
+       font-size:25px;
+    }
+    .product .card{
+       max-width:40%;
+       margin-top:5px ;
+
+    }
+    .product .card img{
+        height:130px;
+    }
+    .product .card .card-body{
+        height:130px;
+        margin:0px;
+    }
+    .product .card .card-body p b,.product .card .card-body p del{
+        font-size:12px;
+    }
+    .product .card .card-body a{
+        margin-top:-14px;
+    }
+
+      /* information */
+    .info{
+        margin-top: 20px;
+    }  
+    .info .footer{
+        width: 100%;
+        height: 90px;
+    }  
+
+    /* bottom navbar */
+    .nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+        z-index: 20;   
+    }
+    .nav .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:15px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+        margin-top: 5px;
+    }
+    .nav_link:hover{
+        background-color: #eeeeee;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav_link:active{
+        color:  rgb(86, 162, 224);
+    }
+    .nav_icon{
+        font-size: 24px;
+    } 
+
+     /* information */
+     .info h3{
+         font-size: 20px;
+     }
+
+
+}
+
+/* bottom navbar */
+.nav{
+    display: none;
+}
+.nav_link{
+    display: none;
+}
+
+@media (max-width:768px){
+    
+      /* Navigation Bar */
+    .navbar ul li{
+        display:none;
+    }
+     .navbar button{
+         margin-right:0px;
+    }
+     .navbar button img{
+         width:30px;
+         height:30px;
+     }
+     .navbar .brand_name{
+         font-size:20px;
+     }
+    
+        /* product group */
+
+    .product_group h1{
+        font-size:25px;
+    }  
+    .product_group .card-body {
+        height: 120px;
+    }
+    .product_group .card-body .card{
+        max-width:20%;
+        max-height:80px;
+    }
+    .product_group .card-body .card img{
+        height: 70px;
+    }
+    .product_group .card .card-header i{
+        font-size:13px;
+    } 
+    
+    /* bottom navbar */
+    .nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+        z-index: 20;   
+    }
+    .nav .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:15px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+        margin-top: 5px;
+    }
+    .nav_link:hover{
+        background-color: #eeeeee;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav_link:active{
+        color:  rgb(86, 162, 224);
+    }
+    .nav_icon{
+        font-size: 24px;
+    } 
+
+      /* product card */
+     .product{
+        margin:0px;
+    }
+    .product h1{
+       font-size:25px;
+    }
+    .product .card{
+       max-width:40%;
+       margin-top:5px ;
+
+    }
+    .product .card img{
+        height:130px;
+    }
+    .product .card .card-body{
+        height:130px;
+        margin:0px;
+    }
+    .product .card .card-body p b,.product .card .card-body p del{
+        font-size:12px;
+    }
+    .product .card .card-body a{
+        margin-top:-14px;
+    } 
+
+    
+      /* information */
+    .info{
+        margin-top: 20px;
+    }  
+    .info h1{
+        font-size:20px;
+        color:white;
+    }
+    .info .footer{
+        width: 100%;
+        height: 90px;
+    }  
+
+
+} 

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="icon" href="../images/brandlogo.png" type="image/icon">
+
+         <!-- bootsrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        img{
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        a{
+            margin-left: 20px;
+            font-size: 20px;
+            color: gray;
+            text-decoration:none;
+            text-transform: capitalize;
+        } 
+        .list-group{
+           margin-top: 50px;
+        }
+        .navbar a i{
+            text-decoration:none;
+            size:5px;
+            margin-right:20px;
+            color: gray;
+        }
+        .navbar a:hover i{
+            background:none;
+            color:blue;
+        }
+
+        @media (max-width:360px){
+
+        .navbar a i {
+            display: none;
+        }    
+        .navbar span{
+            margin-left: 100px;
+            letter-spacing: 2px;
+        }
+/* bottom navbar */
+.nav{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  overflow-x: auto;
+  z-index: 20;   
+}
+.nav .nav_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:15px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+  margin-top: 5px;
+}
+.nav_link:hover{
+  background-color: #eeeeee;
+  text-decoration: none;
+  color: #444444;
+}
+.nav_link:active{
+  color: #009578;
+}
+.nav_icon{
+  font-size: 24px;
+} 
+
+}
+@media (max-width:768px){
+    .navbar a i {
+        display: none;
+    }
+    .navbar span{
+        margin-left: 100px;
+        letter-spacing: 2px;
+    }
+    
+    /* bottom navbar */
+    .nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        height:55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+        z-index: 20;    
+    }
+    .nav .nav_link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        min-width: 50px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size:15px;
+        color: #444444;
+        text-decoration: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.1s ease-in-out;
+        margin-top: 5px;
+    }
+    .nav_link:hover{
+        background-color: #eeeeee;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav_link:active{
+        color: #009578;
+    }
+    .nav_icon{
+        font-size: 24px;
+    } 
+
+}   
+
+    </style>
+
+</head>
+<body>
+    <div class="container-flude">
+        <nav class="navbar fixed-top bg-light">
+          <a href="../home.html"><i class="fa fa-arrow-left mr-4" arial-hidden="true"></i></a>
+          <span class="mr-auto text-info font-weight-bold " style="font-size:25px;">Category</span>
+          </ul>
+        </nav>
+
+        
+          <!-- bottom navbar -->
+
+      <div class="bottom_nav">
+        <nav class="nav">
+          <a href="../home.html" class="nav_link">
+            <i class="fa fa-home nav_icon" aria-hidden="true"></i>
+            <span class="nav_text">home</span>
+          </a>
+          <a href="./category.html" class="nav_link">
+            <i class="fa fa-th-list nav_icon" aria-hidden="true"></i>
+            <span class="nav_text">category</span>
+          </a>
+          <a href="./cart.html" class="nav_link">
+            <i class="fa fa-shopping-cart nav_icon" aria-hidden="true"></i>
+            <span class="nav_text">cart</span>
+          </a>
+          <a href="./account.html" class="nav_link">
+            <i class="fa fa-user nav_icon" aria-hidden="true"></i>
+            <span class="nav_text">account</span>
+          </a>
+        </nav>
+      </div>
+        
+        <ul class="list-group">
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Mother & Kids</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html" target="_blanck">Shoes</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Jwellery & Accessories</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Cellphone </a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Home Appliances</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Apparel for Man</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Apparel for Women</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Buety & Health</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Food</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Furniture</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Computer & Office </a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Watches</a></li>
+            <li class="list-group-item"><img src="../images/slider1.jpeg" height="30" width="30"><a href="./product_pages/shoes.html">Tools</a></li>
+            <br>
+            <br>
+        </ul>
+    </div>
+    
+</body>
+</html>
