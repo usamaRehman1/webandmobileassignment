@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        @media(max-width: 360px){
+            .container h1{
+                font-size: 30px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container text-center my-4">
+        <h1>Assignment 3</h1>
+        <button class="btn btn-secondary active my-2" role="button" aria-pressed="true" onclick="task1();">Task 1</button>
+        <button class="btn btn-secondary active my-2" role="button" aria-pressed="true" onclick="task2();">Task 2</button>
+        <button class="btn btn-secondary active my-2" role="button" aria-pressed="true" onclick="task3();">Task 3</button>
+        <button class="btn btn-secondary active my-2" role="button" aria-pressed="true" onclick="task4();">Task 4</button>
+    </div>
+    
+</body>
+    <script>
+        // Task 1
+        function task1(){
+             var age = 20 ;
+             alert("i am " + age + 'years old');
+        }
+
+        // Task 2
+        function task2(){
+            // var visitorCount;
+            // visitorCount += 1 ;
+            // alert("You have Visited this site " + visitorCount  + " times. ") ;
+
+        }
+
+        // Task 3
+        function task3(){
+             var birthYear = 1990 ;
+             document.write("My Birth year Is " + birthYear );
+             document.write("Data type of my declared variable is number ");
+        }
+
+        // Task 4
+        function task4(){        
+             var visitorName = "John Doe";
+             var title = ' T-shirt(s)';
+             var quantity = 5;
+             document.write(visitorName + " Ordered " + quantity + title + " on XYZ clothing store" );
+        }
+
+    </script>
+</html>
