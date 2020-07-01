@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+        <div id="currHistory"></div>
+        <input type="text" id="resultBar"/>
+        <div id="historyBtn" class="fa fa-caret-down" arial-hidden="true"></div>
+        <table id="keyBoard">
+
+            <tr>
+                <td><button class="calcBtn" onclick="clearData()">C</button></td>
+                <td><button class="calcBtn" onclick="getNumber('%')">%</button></td>
+                <td><button class="calcBtn" onclick="cut()" style="font-size:17px;">CE</button></td>
+                <td><button class="calcBtn red" onclick="getNumber('/')">&#247;</button></td>
+            </tr>
+            <tr>
+                <td><button class="calcBtn" onclick="getNumber('7')">7</button></td>
+                <td><button class="calcBtn" onclick="getNumber('8')">8</button></td>
+                <td><button class="calcBtn" onclick="getNumber('9')">9</button></td>
+                <td><button class="calcBtn red" onclick="getNumber('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="calcBtn" onclick="getNumber('4')">4</button></td>
+                <td><button class="calcBtn" onclick="getNumber('5')">5</button></td>
+                <td><button class="calcBtn" onclick="getNumber('6')">6</button></td>
+                <td><button class="calcBtn red" onclick="getNumber('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="calcBtn" onclick="getNumber('1')">1</button></td>
+                <td><button class="calcBtn" onclick="getNumber('2')">2</button></td>
+                <td><button class="calcBtn" onclick="getNumber('3')">3</button></td>
+                <td><button class="calcBtn red" onclick="getNumber('+')">+</button></td>
+            </tr>   
+            <tr>
+                <td><button class="calcBtn" onclick="getNumber('00')">00</button></td>
+                <td><button class="calcBtn" onclick="getNumber('0')">0</button></td>
+                <td><button class="calcBtn" onclick="getNumber('.')">.</button></td>
+                <td><button class="calcBtn red" onclick="result('=')">=</button></td>
+            </tr>         
+
+        </table>
+
+        
+        <div id="history">
+            <div id="historyData">
+                <ul id="historyList">
+                </ul>
+            </div>
+            <div class="footerBtn">
+                <div id="calcBtn" class="calcBtn">
+                    <span class="fa fa-calculator" arial-hidden="true"></span>
+                    <span class="BtnText">calculator</span>
+                </div>
+                <div id="clearBtn" class="clearBtn">
+                    <span class="fa fa-trash" arial-hidden="true"></span>
+                    <span class="BtnText">Delete</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+    
+</body>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</html>
