@@ -1,0 +1,113 @@
+    body{
+        margin:0;
+        padding:0;
+    }
+    .container{
+        border:2px solid rgb(228, 213, 213);
+        border-radius:5px;
+        width:50%;
+        height:500px;
+        margin:0px auto;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        padding:10px;
+        text-align:center;
+        box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.5);
+    }
+    .screen{
+        border:4px solid gray;
+        margin:0px auto;
+        padding-top:70px;
+        width:40%;
+        height:140px;
+        border-radius:100%;
+    }
+    .lap{
+        width:100%;
+        height:200px;
+        margin-top:10px;
+    }
+    .lap #lapList{
+        width:85%;
+        height:180px;
+        overflow:auto;
+    }
+    .lap #lapList li{
+        width:98%;
+        height:25px;
+        list-style-type:decimal-leading-zero;
+    }
+    .lap #lapList li span{
+        float:right;
+        opacity:0.5;
+    }
+    #btn_pair1{
+        width:100%;
+        height:60px;
+        margin-top:10px;
+    }
+    #btn_pair1 button{
+        margin:5px;
+        width:40%;
+        height:30px;
+        margin-top:20px;
+        border-radius:5px;
+        border:none;
+        cursor:pointer;
+        outline:none;
+        letter-spacing: 2px;
+    }
+    #btn_pair1 .start{
+        background-color:red; 
+        color:white;
+    }
+    #btn_pair1 .reset{
+        background-color:lightgray; 
+        color:gray;
+    }
+    
+    #btn_pair1 .reset2{
+        background-color: rgb(226, 171, 171);
+        color:red;
+    }
+
+    @media (max-width:400px){
+        
+    .container{
+        margin:0;
+        border:none;
+        border-radius:none;
+        box-shadow:none;
+        width:92%;
+        height:620px;
+    }
+    .screen{
+        width:60%;
+    }
+    
+    #btn_pair1 {
+        width:95%;
+        height:60px;
+        position:absolute;
+        bottom:0%;
+        margin-bottom:6px;
+    }
+    .lap{
+        width:100%;
+        height:300px;
+        margin-top:30px;
+    }
+    .lap #lapList{
+        width:85%;
+        height:280px;
+    }
+    .lap #lapList li{ 
+        padding:3px;
+        font-size:20px;
+        width:96%;
+        height:40px;
+    } 
+
+    }
