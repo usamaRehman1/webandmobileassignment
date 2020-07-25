@@ -38,6 +38,9 @@ function resetLap(){
 
     }
     else if(text === "Reset"){
+        milliSec = 0 ;
+        seconds = 0 ;
+        minutes = 0;
         document.getElementById("resetLap").classList.remove("reset2");
     
         document.getElementById("min").innerHTML = "00" ;

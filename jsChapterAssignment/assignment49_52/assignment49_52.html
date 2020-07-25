@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment49_52</title>
+    <link href="style.css" rel="stylesheet" type ="text/css">
+</head>
+<body>
+      <!-- Task 01 -->
+    <div id="module">
+        <div id="content">
+            <div class="close" onclick="closeModule()">x</div>
+            <h1>SignUp</h1>
+            <label>First Name : </label>
+            <input type="text" id="fname" ><br>
+            <label>Last Name : </label>
+            <input type="text" id="lname"><br>
+            <label>email : </label>
+            <input type="email" id="email"><br>
+            <label>password : </label>
+            <input type="password" id="pass"><br>
+            <button onclick="submit()">signup</button>
+        </div>
+    </div>
+
+    <div id="studata">
+    <button onclick="signup()">SignUp</button>
+    <div id="showdata"></div>        
+    </div>
+
+      <!-- Task 02 -->
+    <p id="p1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur odio culpa quasi quam recusandae esse saepe dicta quaerat.
+        <a href="javascript:void(0);" onclick="readMore()">More</a>
+
+    </p>
+
+       <!-- Task 03 -->
+       <div id="studentRec">
+        <div id="stuForm">
+            <form></form>
+            <label>
+                Name : 
+                <input type="text" placeholder="enter name " id="name">
+            </label><br>
+            <label>
+                school : 
+                <input type="text" placeholder="enter school " id="sch">
+            </label><br>
+            <label>
+                city : 
+                <input type="text" placeholder="enter city " id="city">
+            </label><br>
+            <label>
+                Religion : 
+                <input type="text" placeholder="enter Religion " id="rel">
+            </label>
+            <button onclick="submit()">submit</button>
+            </form>
+        </div>
+        <div id="studata">
+            <table id="dataTab" border="2">
+                <tr>
+                    <th>Name</th>
+                    <th>school Name</th>
+                    <th>City</th>
+                    <th>Religion</th>
+                    <th>Edit Button</th>
+                    <th>Del Button</th>
+                </tr>
+            </table>    
+   
+
+    </div>
+    
+</body>
+    <script src="main.js"></script>
+</html>
