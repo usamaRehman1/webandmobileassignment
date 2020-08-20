@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-fluide{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 70, 70);
+}
+.container-fluide .card{
+    display:block;
+    position:absolute;
+    left:50%;
+    top:30%;
+    transform:translate(-50%, -30%);
+    width:40%;
+    height:150px;
+    background:#fff;
+    border-radius:5px;
+    padding:20px;
+    box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.3);
+}
+.container-fluide .card button{
+    background: none;
+    position:absolute;
+    bottom:0;
+    width:110px;
+    height:40px;
+    font-size:13px;
+    letter-spacing:1px;
+    background-color: rgb(14, 70, 70);
+    border-radius:5px;
+    color:#fff;
+    padding:5px;
+    margin-bottom:3px;
+    text-transform:uppercase ;
+    cursor:pointer;
+    outline:none;
+    transition:0.2 all;
+}
+.container-fluide .card button:hover{
+    box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.3);
+    transform: scale(0.98);
+}
+.container-fluide .card p{
+    line-height:3em;
+    font-size:20px;
+    color:rgb(14, 70, 70);
+}
+.container-fluide .card h1{
+    line-height:2em;
+    color:rgb(14, 70, 70);
+    font-family: cursive;
+}
+.module{
+    display:none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:60%;
+    height:500px;
+    border-radius:5px;
+    background:#fff;
+    box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.3);
+}
+.module .module_content{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.module .module_content #header{
+    width: 100%;
+    height:50px;
+    border-bottom:2px solid rgba(0 , 0, 0, 0.3);
+
+}
+.module .module_content #header span:nth-child(1){
+    position:absolute;
+    left:0;
+    width:77%;
+    font-size:20px;
+    text-align:center;
+    padding:10px;
+    opacity:0.7;
+}
+.module .module_content #header span:nth-child(2){
+    position:absolute;
+    right:1px;
+    width:15%;
+    padding:10px;
+}
+.module .module_content #question{
+    padding:20px;
+    font-size:25px;
+}
+.module .module_content #option{
+    padding:20px;
+    height:250px;
+    border-bottom:2px solid rgba(0 , 0, 0, 0.3);
+}
+.module .module_content #option ul li{
+    list-style-type:none;
+    width:95%;
+    border:2px solid rgb(151, 148, 148); 
+    padding:13px;
+    margin-bottom:20px;
+    border-radius: 5px;
+    letter-spacing:2px;
+    cursor: pointer;
+    transition:all 0.2 ;
+}
+.module .module_content #option ul li:hover{
+    transform: scale(0.98);
+    border:1px solid rgb(14, 70, 70);
+}
+.active{
+    background-color: rgb(151, 148, 148);
+    color:#fff;
+}
+.module .module_content  button  {
+    background: none;
+    width:100px;
+    height:40px;
+    font-size:15px;
+    letter-spacing:2px;
+    background-color: rgb(14, 70, 70);
+    border-radius:5px;
+    color:#fff;
+    padding:5px;
+    margin:20px;
+    text-transform:uppercase ;
+    cursor:pointer;
+    outline:none;
+    transition:0.2 all;
+
+}
+.module .module_content  button:hover , .result button:hover{
+    box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.3);
+    transform: scale(0.98);
+}
+.result{
+    display:none;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:60%;
+    height:500px;
+    border-radius:5px;
+    background:#fff;
+    box-shadow:2px 3px 5px rgba(0 , 0, 0, 0.3);
+    text-align:center;
+
+}
+.result_content{
+    position:absolute;
+    width:100%;
+    height:100%;
+
+}
+#result_header{
+    width: 100%;
+    height:50px;
+    border-bottom:2px solid rgba(0 , 0, 0, 0.3);
+    text-align:center;
+    color:rgb(14, 70, 70);
+    letter-spacing: 2px;
+}
+#result_box{
+    width: 100%;
+    height:350px;
+    border-bottom:2px solid rgba(0 , 0, 0, 0.3);
+}
+#result_box table{
+    width:80%;
+    height:300px;
+    border-collapse: collapse;
+    margin: 30px 60px;
+}
+#result_box table td{
+    border:1px solid #cccccc;
+    padding:8px 15px;
+    font-weight: bold;
+    color: #000000;
+    width:40%;
+    text-align:left;
+}
+.result button{
+    background: none;
+    width:130px;
+    height:40px;
+    font-size:15px;
+    letter-spacing:2px;
+    background-color: rgb(14, 70, 70);
+    border-radius:5px;
+    color:#fff;
+    padding:5px;
+    margin:20px;
+    text-transform:uppercase ;
+    cursor:pointer;
+    outline:none;
+    transition:0.2 all;
+}
+
+@media (max-width:420px){
+    .container-fluide .card{
+        width:80%;
+        height:150px;
+    }
+    .module{
+        width:95%;
+        height:510px;
+    }
+    .result{
+        width:95%;
+        height:510px;
+    }
+    #result_box table{
+        margin: 30px 30px;
+    }
+    .result button{
+       margin:5px;
+    }
+    
+}
+
+
+
+
+
+

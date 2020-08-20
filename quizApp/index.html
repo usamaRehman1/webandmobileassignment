@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" > -->
+</head>
+<body>
+    <div class="container-fluide">
+
+        <!-- first quiz starting card  -->
+        <div class="card">
+            <h1>Introduction</h1>
+            <p>Total number of question is 5.</p>
+            <button onclick="startquiz()">Start quiz</button>
+        </div>
+
+          <!-- Quiz module -->
+        <div class="module ">
+            <div class="module_content">
+                <div id="header">
+                    <span id="queCounter">Question no 1 to 5 .</span>
+                    <span id="clock">00:00</span>
+                </div>
+                <div id="question">01 : What is the capital of Pakistan?</div>
+                <div id="option">
+                    <ul id="optionUl">
+                    </ul>
+                </div>
+                <button onclick="nextQue()">Next</button>
+            </div>
+        </div>
+
+        
+          <!-- Result module -->
+        <div class="result">
+            <div class="result_content">
+                <div id="result_header">
+                    <h1>QUIZ RESULT</h1>
+                </div>
+                <div id="result_box">
+                    <table>
+                        <tr>
+                            <td>Total Question</td>
+                            <td><span class="total-question">5</span></td>
+                        </tr>
+                        <tr>
+                            <td>Attempt</td>
+                            <td><span class="attempt-question">5</span></td>
+                        </tr>
+                        <tr>
+                            <td>correct</td>
+                            <td><span class="total-correct">5</span></td>
+                        </tr>
+                        <tr>
+                            <td>Wrong</td>
+                            <td><span class="total-wrong">3</span></td>
+                        </tr>
+                        <tr>
+                            <td>percentage</td>
+                            <td><span class="percentage">50.00%</span></td>
+                        </tr> 
+                        <tr>
+                            <td>Your Total Score</td>
+                            <td><span class="attemptDiv">3/5</span></td>
+                        </tr>                   
+                    </table>
+                </div>
+                
+                <button onclick="startquiz()">Try again</button>
+                <button onclick="home()">home</button>
+
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+   <script src="app.js"></script>
+</html>
